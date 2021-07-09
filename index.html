@@ -43,10 +43,14 @@
         float: right;
     }
     
+    .container {
+        width: 60%;
+        margin: 2rem auto;
+    }
+    
     .photos {
         width: 20%;
         float: left;
-        ;
     }
     
     footer {
@@ -90,11 +94,11 @@
                         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                       </svg>
                   </button>
-            <br>
-            <a href="index.html" style="position: absolute; left: 50%; transform: translate(-50%);z-index: 10px;"> <img class="logo" src="images/MRHD.svg"></a>
+
+
         </div>
 
-
+        <a href="index.html" style="position: absolute; left: 50%; transform: translate(-50%); z-index: 10px;"> <img class="logo" src="images/MRHD.svg"></a>
 
         <div class="collapse navbar-collapse mr-4 justify-content-sm-end" id="navbarNav">
             <ul class="navbar-nav" style="flex-wrap: initial; display: flex; align-items: center; flex-direction: row; justify-content: space-evenly;">
@@ -132,16 +136,14 @@
 
     </center>
 </body>
-<footer>
-
-    <p>© 2021 Raga Hari Deep Molagazzela. All rights reserved.</p>
-
+<footer style="position: absolute; left: 50%; transform: translateX(-50%); bottom: -10px;">
+    <p style="padding-top: 10px; text-align: center;">© 2021 Raga Hari Deep Molagazzela. All rights reserved.</p>
 </footer>
 <!--Mobile styling-->
 <style>
     @media (max-width: 700px) {
         .logo {
-            padding-top: 5px;
+            padding-top: 30px;
             margin-bottom: 10px;
             padding-bottom: 2%;
         }

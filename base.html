@@ -65,10 +65,10 @@
 
         <div class="container-fluid">
             <div class="collapse navbar-collapse mr-4 justify-content-start" id="navbarNav">
-                <ul class="navbar-nav " style="flex-wrap: initial; display: flex; align-items: center; flex-direction: row; justify-content: space-evenly; padding-bottom: 20px;   ">
+                <ul class="navbar-nav " style="flex-wrap: initial; display: flex; align-items: center; flex-direction: row; justify-content: space-evenly; padding-bottom: 20px;  ">
                     <!--<li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li> -->
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li> -->
                     <li class="nav-item" style=" margin: 15px;">
                         <a class="nav-link" href="#" style="color: black;">Projects</a>
                     </li>
@@ -86,13 +86,15 @@
                 </ul>
             </div>
             <button class="navbar-toggler" type="button" style="color: white;" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                      </svg>
-                  </button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-list" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </button>
+
 
         </div>
-        <a href="index.html" style="position: absolute; left: 50%; transform: translate(-50%);z-index: 10px;"> <img class="logo" src="images/MRHD.svg"></a>
+
+        <a href="index.html" style="position: absolute; left: 50%; transform: translate(-50%); z-index: 10px;"> <img class="logo" src="images/MRHD.svg"></a>
 
         <div class="collapse navbar-collapse mr-4 justify-content-sm-end" id="navbarNav">
             <ul class="navbar-nav" style="flex-wrap: initial; display: flex; align-items: center; flex-direction: row; justify-content: space-evenly;">
@@ -120,17 +122,16 @@
 
 
 </body>
-<footer>
-
-    <p>© 2021 Raga Hari Deep Molagazzela. All rights reserved.</p>
-
+<footer style="position: absolute; left: 50%; transform: translateX(-50%); bottom: -10px;">
+    <p style="padding-top: 10px; text-align: center;">© 2021 Raga Hari Deep Molagazzela. All rights reserved.</p>
 </footer>
 <!--Mobile styling-->
 <style>
-    @media (min-width: 700px) {
+    @media (max-width: 700px) {
         .logo {
-            padding-top: 20px;
+            padding-top: 30px;
             margin-bottom: 10px;
+            padding-bottom: 2%;
         }
     }
 </style>
