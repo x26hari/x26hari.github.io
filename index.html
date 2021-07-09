@@ -1,10 +1,11 @@
 <html>
     <head>
-        <title>MRHD</title>
+        <title>MRHD Interaction & Visual Designer</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compactable" content="ie-edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" >
+        <link rel="icon" href="MY LOGO/MRHD_white.png" type="image/icon type">
         <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
        <!-- JavaScript Bundle with Popper -->
@@ -23,71 +24,49 @@
         margin: 0;
         padding: 0;
     }
+    .intro{
+      padding-top: 100px;
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+    }
     .bnt{
-  margin: 7%;
-  
-  width: 250px;  
 
-}
-video
-{
-  width: 300px;
-}
-.photos
-{
-  width: 250px;
-}
-    @media (min-width: 600px) {
- 
- video{
-   width:300px;
-   margin-bottom: 2%;
- }
- .photos
- {
-  width: 350px;
-  float: none;
- }
- .btn{
-   width: 150px;
-   font-size: smaller;
-   margin-top: 20%;
- }
-}
+          width: 250px;  
+        }
+    video
+    {
+      width: 300px;
+      float: right;
 
-@media (min-width: 1000px) {
- 
+    }
+    .photos
+    {
+      width: 250px;
+      float: left;  ;
+    }
 
- video{
-   width:550px;
-   margin-top: 10%;
- }
- .photos
- {
-  width: 450px;
- }
+    .btn:hover
+    {
+      color: #F7DABB;
+      background: rgba(0, 113, 243, 0.856);
+      border-color: rgba(0, 113, 243, 0.856);
+    }
+   
+    footer {
+        position: absolute;
+        width: max-content;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      
+      
+
+        padding: 1%;
+    }
 }
 
-@media (min-width: 2000px) {
-  .intro
-  {
-    width: 1700px;
-  }
-  
-  
-}
-
-      .intro
-      {
-            padding : 15%;  
-      }
-       
-      .btn:hover
-          {
-            color: #F7DABB;
-            background: rgba(0, 113, 243, 0.856);
-            border-color: rgba(0, 113, 243, 0.856);
-          }
     </style>
       <!--Body -->
     <body>
@@ -110,18 +89,18 @@ video
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                       </li> -->
                       <li class="nav-item" style=" margin: 15px;">
-                        <a class="nav-link"href="aboutus.html" style="color: black;" >Projects</a>
+                        <a class="nav-link" href="#" target="_blank" style="color: black;" >Projects</a>
                       </li>
                       <li class="nav-item" style=" margin: 15px;">
-                        <a class="nav-link" href="team.html" style="color: black;">Photographs</a>
+                        <a class="nav-link" href="#" target="_blank" style="color: black;">Photographs</a>
                       </li>
   
                     <li class="nav-item" style=" margin: 15px;">
-                      <a class="nav-link"href="projects.html" style="color: black;">UI Designs</a>
+                      <a class="nav-link"href="#" target="_blank" style="color: black;">UI Designs</a>
                     </li>
   
                       <li class="nav-item" style=" margin: 15px;">
-                        <a class="nav-link" href="events.html" style="color: black;">Resume</a>
+                        <a class="nav-link" href="https://drive.google.com/file/d/1rR_mCYixBPTaNgd1dqp8H_Q5xq9vwwei/view?usp=sharing" target="_blank" style="color: black;">Resume</a>
                       </li>
                     </ul>
                   </div>
@@ -156,15 +135,14 @@ video
         <center>
 
         <div class="intro">
-                <video src="images/intro.mov" loop="true" muted="true" autoplay="true" style="float: right;"></video>
-               
-                 <img class="photos"src="images/myphoto.svg" style="float: left;">
-                </div>
+          <img class="photos"src="images/myphoto.svg" style="">
+          <video src="images/intro.mov" loop="true" muted="true" autoplay="true" style=""></video>
         </div>
-     
+        
         <div class="bnt">
-        <a href="aboutus.html" class="btn btn-primary" style=" font-family: 'Syncopate', sans-serif;">ABOUT ME</a>
-      </div>
+          <a href="aboutus.html" class="btn btn-primary" style=" font-family: 'Syncopate', sans-serif;">ABOUT ME</a>
+        </div>  
+      
         </center>
     </body>
     <footer>
@@ -172,4 +150,56 @@ video
       <p>© 2021 Raga Hari Deep Molagazzela. All rights reserved.</p>
     </center>
     </footer>
+    <!--Mobile styling-->
+    <style>
+    @media (min-width: 700px)
+    {
+ 
+        video{
+          float: none;
+          width:300px;
+          margin-left: 0%;
+          margin-bottom: 2%;
+        }
+        .photos
+        {
+          float: none;
+          width: 350px;
+          float: none;
+          margin: 0%;
+          padding-bottom: 10%;
+        }
+        .btn{
+          width: 150px;
+          font-size: smaller;
+          margin-top: 10%;
+        }
+    }
+
+
+@media (min-width: 1000px) {
+ 
+
+ video{
+   width:550px;
+   margin-left: 10%;
+ }
+ .photos
+ {
+  width: 450px;
+ 
+
+ }
+}
+
+@media (min-width: 2000px) {
+  .intro
+  {
+    width: 1700px;
+  }
+  
+  
+}
+
+    </style>
 </html>
