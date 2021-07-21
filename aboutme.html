@@ -1,11 +1,10 @@
-<html class="sr">
+<html>
 
 <head>
     <title>MRHD Interaction & Visual Designer</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compactable" content="ie-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8">
     <link rel="icon" href="MY LOGO/MRHD_white.png" type="image/icon type">
     <!-- CSS only -->
@@ -31,101 +30,35 @@
         padding: 0;
     }
 
-
-
-    /*Images CSS*/
-
-    .container {
-        width: 65%;
-        margin: 2rem auto;
+    .intro {
+        padding-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
     }
 
-    .gallery-1,
-    .gallery-2 {
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(8, 5vw);
-        grid-gap: 1.5rem;
-        visibility: hidden;
+    .bnt {
+        width: 250px;
     }
 
-    .gallery__img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
+    video {
+        width: 300px;
+        float: right;
     }
 
-    .gallery__item--1 {
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 1;
-        grid-row-end: 5;
-        /** Alternative Syntax **/
-        /* grid-column: 1 / span 2;  */
-        /* grid-row: 1 / span 2; */
+    .photos {
+        width: 250px;
+        float: left;
+        ;
     }
 
-
-    .gallery__item--2 {
-        grid-column-start: 5;
-        grid-column-end: 9;
-        grid-row-start: 1;
-        grid-row-end: 9;
-        /** Alternative Syntax **/
-        /* grid-column: 5 / span 4;
-  grid-row: 1 / span 5; */
-    }
-
-    .gallery__item--3 {
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 5;
-        grid-row-end: 9;
-        /** Alternative Syntax **/
-        /* grid-column: 1 / span 4;  */
-        /* grid-row: 3 / span 3; */
-    }
-
-
-    .gallery__item--4 {
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 1;
-        grid-row-end: 9;
-        /** Alternative Syntax **/
-        /* grid-column: 1 / span 4;  */
-        /* grid-row: 3 / span 3; */
-    }
-
-    .gallery__item--5 {
-        grid-column-start: 5;
-        grid-column-end: 7;
-        grid-row-start: 1;
-        grid-row-end: 5;
-        /** Alternative Syntax **/
-        /* grid-column: 1 / span 2;  */
-        /* grid-row: 1 / span 2; */
-    }
-
-    .gallery__item--6 {
-        grid-column-start: 7;
-        grid-column-end: 9;
-        grid-row-start: 1;
-        grid-row-end: 5;
-        /** Alternative Syntax **/
-        /* grid-column: 5 / span 4;
-  grid-row: 1 / span 5; */
-    }
-
-    .gallery__item--7 {
-        grid-column-start: 5;
-        grid-column-end: 9;
-        grid-row-start: 5;
-        grid-row-end: 9;
-        /** Alternative Syntax **/
-        /* grid-column: 5 / span 4;
-  grid-row: 1 / span 5; */
+    footer {
+        position: absolute;
+        width: max-content;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
     }
 </style>
 <!--Body -->
@@ -175,8 +108,9 @@
 
         </div>
 
-        <a href="index.html" style="position: absolute; left: 50%; transform: translate(-50%); z-index: 10px;"> <img
-                class="logo" src="images/MRHD.svg"></a>
+
+        <a href="index.html" style="position: absolute; left: 50%; transform: translate(-50%); z-index: 10px;" )>
+            <img class="logo" src="images/MRHD.svg"></a>
 
         <div class="collapse navbar-collapse mr-4 justify-content-sm-end" id="navbarNav">
             <ul class="navbar-nav"
@@ -207,64 +141,42 @@
     </nav>
     <!--Content-->
 
-
-    <div class="container">
-        <div class="gallery-1">
-            <figure class="gallery__item gallery__item--1">
-                <img src="images/1.jpg" alt="Gallery image 1" class="gallery__img">
-            </figure>
-            <figure class="gallery__item gallery__item--2">
-                <img src="images/2.jpg" alt="Gallery image 2" class="gallery__img">
-            </figure>
-            <figure class="gallery__item gallery__item--3">
-                <img src="images/3.jpg" alt="Gallery image 3" class="gallery__img">
-            </figure>
-        </div>
-    </div>
-    <div class="container">
-        <div class="gallery-2">
-            <figure class="gallery__item gallery__item--4">
-                <img src="images/4.jpg" alt="Gallery image 4" class="gallery__img">
-            </figure>
-            <figure class="gallery__item gallery__item--5">
-                <img src="images/5.jpg" alt="Gallery image 5" class="gallery__img">
-            </figure>
-            <figure class="gallery__item gallery__item--6">
-                <img src="images/6.jpg" alt="Gallery image 6" class="gallery__img">
-            </figure>
-            <figure class="gallery__item gallery__item--7">
-                <img src="images/7.jpg" alt="Gallery image 7" class="gallery__img">
-            </figure>
-        </div>
-    </div>
     <center>
-        <p style="height: 3vh; padding-bottom: 2px;">© 2021 Raga Hari Deep Molagazzela. All rights reserved.</p>
+        <h1 style="font-family: 'Syncopate', sans-serif;">ABOUT ME</h1>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            </div>
+        </div>
     </center>
 
-    <script>
-        ScrollReveal().reveal('.gallery__item--1', { delay: 400 });
-        ScrollReveal().reveal('.gallery__item--2', { delay: 600 });
-        ScrollReveal().reveal('.gallery__item--3', { delay: 800 });
-        ScrollReveal().reveal('.gallery__item--4', { delay: 400 });
-        ScrollReveal().reveal('.gallery__item--5', { delay: 600 });
-        ScrollReveal().reveal('.gallery__item--6', { delay: 800 });
-        ScrollReveal().reveal('.gallery__item--7', { delay: 1000 });
-    </script>
+
 </body>
+<footer style="position: absolute; left: 50%; transform: translateX(-50%); bottom: -10px;">
+    <p style="padding-top: 10px; text-align: center;">© 2021 Raga Hari Deep Molagazzela. All rights reserved.</p>
+</footer>
 <!--Mobile styling-->
 <style>
     @media (max-width: 700px) {
+
+
         .logo {
             padding-top: 30px;
             margin-bottom: 10px;
             padding-bottom: 2%;
-        }
-
-        footer {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            bottom: -10px;
         }
 
         .nav-link {
