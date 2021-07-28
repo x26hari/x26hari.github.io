@@ -1,5 +1,14 @@
-body {
-  color: black;
+@font-face {
+  font-family: "futura";
+  src: url("Futura.ttc") format("ttc");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.nav-link
+{
+  font-family: futura;
 }
 html
 {
@@ -7,3 +16,4 @@ html
   
   
 }
+
