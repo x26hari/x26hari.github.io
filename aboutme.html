@@ -12,10 +12,6 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- CSS AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -64,6 +60,11 @@
         transform: translateX(-50%);
     }
 
+    .aboutme {
+        font-family: sans-serif;
+        font-size: 20px;
+    }
+
     .aboutme,
     .skills {
         max-width: 80%;
@@ -89,6 +90,10 @@
         grid-gap: 2rem;
         background-color: white;
         margin-bottom: 2rem;
+    }
+
+    .thing h3 {
+        font-family: cocogoose;
     }
 
     .aboutme .thing {
@@ -122,6 +127,42 @@
         align-items: center;
     }
 </style>
+
+
+<!--Mobile styling-->
+<style>
+    @media (max-width: 700px) {
+
+
+
+
+        .logo {
+            padding-top: 30px;
+            margin-bottom: 10px;
+            padding-bottom: 2%;
+        }
+
+        .nav-link {
+            font-size: 10px;
+        }
+
+        .thing {
+            display: block;
+        }
+
+        .skills .thing {
+            display: block;
+            align-items: center;
+            padding-bottom: 15px;
+        }
+
+        .aboutme .thing {
+            display: block;
+            align-items: center;
+        }
+    }
+</style>
+
 <!--Body -->
 
 <body>
@@ -407,54 +448,24 @@
     <!--Skils-->
 
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init(
-
-        );
-    </script>
-
     <!--footer-->
     <p style="font-family:futura; align-items: center; text-align: center;">© 2021 Raga Hari Deep Molagazzela. All
         rights reserved. </p>
     <!--footer-->
 </body>
 
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init(
+
+    );
+</script>
 
 
 
-<!--Mobile styling-->
-<style>
-    @media (max-width: 700px) {
-
-
-
-
-        .logo {
-            padding-top: 30px;
-            margin-bottom: 10px;
-            padding-bottom: 2%;
-        }
-
-        .nav-link {
-            font-size: 10px;
-        }
-
-        .thing {
-            display: block;
-        }
-
-        .skills .thing {
-            display: block;
-            align-items: center;
-            padding-bottom: 15px;
-        }
-
-        .aboutme .thing {
-            display: block;
-            align-items: center;
-        }
-    }
-</style>
 
 </html>

@@ -4,13 +4,21 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "cocogoose";
+  src: url("cocogoose.ttf") format("truetype");
+}
+@font-face {
+  font-family: "cocogoose Pro";
+  src: url("Cocogoose\ Pro.ttf") format("truetype");
+}
 
 body{
-  font-family: futura;
+  font-family: cocogoose pro;
 }
 .nav-link
 {
-  font-family: futura;
+  font-family: Cocogoose;
 }
 html
 {
