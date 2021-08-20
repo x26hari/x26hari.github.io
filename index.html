@@ -227,7 +227,8 @@
 
         <div class="intro">
             <img class="photos" src="images/myphoto.jpg">
-            <video class="videos" src="images/intro.mov" muted="true" autoplay="true"></video>
+            <video class="videos" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="500"
+                src="images/intro.mov" muted="true" autoplay="true"></video>
         </div>
 
         <div class="bnt">
@@ -261,7 +262,6 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 <script>
-    ScrollReveal().reveal('.videos', { delay: 200 });
     ScrollReveal().reveal('.photos', { delay: 2800 });
     ScrollReveal().reveal('.bnt', { delay: 7100 });
 </script>
