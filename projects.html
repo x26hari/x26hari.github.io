@@ -59,6 +59,11 @@
         text-align: center;
         align-items: center;
     }
+
+    .card {
+
+        display: table;
+    }
 </style>
 <!--Body -->
 
@@ -138,9 +143,34 @@
     </nav>
     <!--Content-->
 
+    <center>
+        <div class="card" style="border-color: white; " data-aos="fade-right" data-aos-duration="1000"
+            data-aos-delay="1000">
+
+            <a href="https://www.behance.net/gallery/121466767/Mayavi-Club-UIUX-and-Front-End-Website-Design"
+                target="_blank">
+                <img src="images/mayavi.png"
+                    style=" margin: 50px; border-radius: 10px; width:500px; z-index:1; float: center;">
+            </a>
+
+            <a href="https://www.behance.net/gallery/145473433/UX-Audit-HathaSpace" target="_blank"> <img
+                    src="images/hathaspace.png"
+                    style="margin: 50px; border-radius: 10px; width:500px; z-index:1; float: center;">
+            </a>
 
 
+        </div>
 
+        <div class="card" style="border-color: white; " data-aos="fade-right" data-aos-duration="1000"
+            data-aos-delay="1000">
+            <div class="zara">
+                <a href="https://www.behance.net/gallery/145492463/Zara-Mobile-App" target="_blank"> <img
+                        src="images/zara.png" style=" border-radius: 20px; width:550px; z-index:1; float: center;">
+                </a>
+            </div>
+
+        </div>
+    </center>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
@@ -164,6 +194,12 @@
 
         .nav-link {
             font-size: 10px;
+        }
+
+        .zara {
+            width: fit-content;
+            margin: 0px;
+            padding: 0%;
         }
     }
 </style>
