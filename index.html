@@ -23,239 +23,12 @@
 </head>
 <!--styling part -->
 <style>
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
 
-    .intro {
-        padding-top: 100px;
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-        justify-content: center;
-        padding-bottom: 170px;
-
-    }
-
-    .bnt {
-        width: 250px;
-    }
-
-    video {
-        width: 25%;
-        float: right;
-    }
-
-    .container {
-        width: 60%;
-        margin: 2rem auto;
-    }
-
-    .photos {
-        width: 20%;
-        float: left;
-    }
-
-    footer {
-
-
-        align-items: center;
-        text-align: center;
-
-    }
-
-    .nav-link {
-        letter-spacing: 1px;
-    }
-
-
-    /*Images CSS*/
-
-    .container {
-        width: 65%;
-        margin: 2rem auto;
-    }
-
-    .gallery-1,
-    .gallery-2 {
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(8, 5vw);
-        grid-gap: 1.5rem;
-
-    }
-
-    .gallery__img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-        border-radius: 5px;
-    }
-
-    .gallery__item--1 {
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 1;
-        grid-row-end: 5;
-        /** Alternative Syntax **/
-        /* grid-column: 1 / span 2;  */
-        /* grid-row: 1 / span 2; */
-    }
-
-
-    .gallery__item--2 {
-        grid-column-start: 5;
-        grid-column-end: 9;
-        grid-row-start: 1;
-        grid-row-end: 9;
-        /** Alternative Syntax **/
-        /* grid-column: 5 / span 4;
-  grid-row: 1 / span 5; */
-    }
-
-    .gallery__item--3 {
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 5;
-        grid-row-end: 9;
-        /** Alternative Syntax **/
-        /* grid-column: 1 / span 4;  */
-        /* grid-row: 3 / span 3; */
-    }
-
-
-    .gallery__item--4 {
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 1;
-        grid-row-end: 9;
-        /** Alternative Syntax **/
-        /* grid-column: 1 / span 4;  */
-        /* grid-row: 3 / span 3; */
-    }
-
-    .gallery__item--5 {
-        grid-column-start: 5;
-        grid-column-end: 7;
-        grid-row-start: 1;
-        grid-row-end: 5;
-        /** Alternative Syntax **/
-        /* grid-column: 1 / span 2;  */
-        /* grid-row: 1 / span 2; */
-    }
-
-    .gallery__item--6 {
-        grid-column-start: 7;
-        grid-column-end: 9;
-        grid-row-start: 1;
-        grid-row-end: 5;
-        /** Alternative Syntax **/
-        /* grid-column: 5 / span 4;
-  grid-row: 1 / span 5; */
-    }
-
-    .gallery__item--7 {
-        grid-column-start: 5;
-        grid-column-end: 9;
-        grid-row-start: 5;
-        grid-row-end: 9;
-        /** Alternative Syntax **/
-        /* grid-column: 5 / span 4;
-  grid-row: 1 / span 5; */
-    }
 </style>
 
 <!--Mobile styling-->
 <style>
-    @media (max-width: 700px) {
-        .logo {
-            padding-top: 30px;
-            margin-bottom: 10px;
-            padding-bottom: 2%;
-        }
 
-        video {
-            float: none;
-            width: 250px;
-            margin-left: 0%;
-            margin-bottom: 2%;
-        }
-
-        .photos {
-            float: none;
-            width: 300px;
-            margin: 0%;
-            padding-bottom: 10%;
-        }
-
-        .btn {
-            width: 50%;
-            font-size: smaller;
-            margin-top: 10%;
-        }
-
-        .intro {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding-bottom: 100px;
-        }
-
-
-
-        .nav-link {
-            font-size: 10px;
-
-        }
-
-        footer {
-            position: absolute;
-            max-width: 250px;
-            left: 50%;
-            transform: translateX(-50%);
-            color: white;
-        }
-
-        .uc {
-
-            width: 300px;
-        }
-
-
-
-    }
-
-    @media (min-width: 1000px) {
-        video {
-            margin-left: 10%;
-        }
-
-
-    }
-
-    @media (min-width: 2800px) {
-        .video {
-            width: 50%;
-        }
-
-        .photos {
-            width: 30%;
-        }
-
-        .table {
-            width: fit-content;
-        }
-
-        .intro {
-            width: 1700px;
-        }
-
-
-    }
 </style>
 
 <!--Body -->
@@ -264,21 +37,18 @@
 
 
     <!--Nav Bar-->
-
+    <div id="goback"></div>
     <nav class="navbar navbar-expand-lg" data-aos="zoom-in" data-aos-duration="1000">
 
         <div class="container-fluid">
             <div class="collapse navbar-collapse  justify-content-start" id="navbarNav">
                 <ul class="navbar-nav "
                     style="flex-wrap: initial; display: flex; align-items: center; flex-direction: row; justify-content: space-evenly; padding-bottom: 20px;  ">
-                    <!--<li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="aboutme.html" style="color: white;">Work</a>
+                        <a class="nav-link" href="#work" style="color: white;">Work</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="projects.html" style="color: white;">Photographs</a>
+                        <a class="nav-link" href="#photographs" style="color: white;">Photographs</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link"
@@ -288,8 +58,9 @@
                     <li class="nav-item">
                         <a class=" nav-link" href="contact.html" style="color: white;">Contact Me</a>
                     </li>
-                </ul>
             </div>
+            </ul>
+
             <button class="navbar-toggler" type="button" style="color: white;" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -329,112 +100,122 @@
             </ul>
         </div>
     </nav>
+    <div id="smoothscroll">
+        <center>
 
-    <center>
+            <div class="intro">
+                <img class="photos" data-aos="fade-right" data-aos-duration="1500" data-offset="200"
+                    data-aos-delay="500" src="images/myphoto.jpg">
+                <img class="photos" style="width: 500px;" data-aos="fade-left" data-offset="200"
+                    data-aos-duration="1500" data-aos-delay="500" src="images/Intro.svg">
 
-        <div class="intro">
-            <img class="photos" data-aos="fade-right" data-aos-duration="1500" data-offset="200" data-aos-delay="500"
-                src="images/myphoto.jpg">
-            <img class="photos" style="width: 500px;" data-aos="fade-left" data-offset="200" data-aos-duration="1500"
-                data-aos-delay="500" src="images/Intro.svg">
+            </div>
+
+
+
+        </center>
+        <!--WORK-->
+        <div id="work">
+            <h2 style="  padding: 20px;" data-aos="fade-right" data-aos-duration="1000" data-offset="200"
+                data-aos-delay="400">
+                Work</h2>
+
+            <img src="images/zara.png" class="img-fluid" alt="..." data-aos="fade-left" data-aos-duration="1000"
+                data-offset="200" data-aos-delay="400">
+            <img src="images/hathaspace.png" class="img-fluid" alt="..." data-aos="fade-right" data-aos-duration="1000"
+                data-offset="200" data-aos-delay="500">
+            <img src="images/mayavi.png" class="img-fluid" alt="..." data-aos="fade-left" data-aos-duration="1000"
+                data-offset="200" data-aos-delay="400">
 
         </div>
-
-
-
-    </center>
-    <!--WORK-->
-    <h2 style="  padding: 20px;" data-aos="fade-right" data-aos-duration="1000" data-offset="200" data-aos-delay="400">
-        Work</h2>
-
-    <img src="images/zara.png" class="img-fluid" alt="..." data-aos="fade-left" data-aos-duration="1000"
-        data-offset="200" data-aos-delay="400">
-    <img src="images/hathaspace.png" class="img-fluid" alt="..." data-aos="fade-right" data-aos-duration="1000"
-        data-offset="200" data-aos-delay="500">
-    <img src="images/mayavi.png" class="img-fluid" alt="..." data-aos="fade-left" data-aos-duration="1000"
-        data-offset="200" data-aos-delay="400">
-
-
-    <!--ABOUT ME-->
-    <h2 style=" padding: 20px;" data-aos="fade-right" data-aos-duration="1000" data-offset="200" data-aos-delay="500">
-        About Me</h2>
-
-    <center>
-
-        <img class="uc" src="images/uc.svg" data-aos="fade-left" data-aos-duration="1000" data-offset="200"
+        <!--ABOUT ME-->
+        <h2 style=" padding: 20px;" data-aos="fade-right" data-aos-duration="1000" data-offset="200"
             data-aos-delay="500">
+            About Me</h2>
 
-    </center>
+        <center>
 
-    <!--PHOTOGRAPHS-->
-    <h2 style=" padding: 20px;" data-aos="fade-right" data-aos-duration="1000" data-offset="200" data-aos-delay="500">
-        Photographs</h2>
-    <p style="padding: 20px; font-family: grifter; color:white;" data-aos="fade-left" data-aos-duration="1000"
-        data-offset="200" data-aos-delay="500">As a child I had always seen my father click
-        photographs of me and the
-        surroundings which has inspired me to take some wierd,fun and crazy photos.
+            <img class="uc" src="images/uc.svg" data-aos="fade-left" data-aos-duration="1000" data-offset="200"
+                data-aos-delay="500">
 
-        <br><br>With the help of my dad’s old Canon 1000D and lil bit of Photoshop here are some of My Masterpieces 😂
-    </p>
-    <div class="container">
-        <div class="gallery-1">
-            <figure class="gallery__item gallery__item--1">
+        </center>
 
-                <img src="images/1.jpg" alt="Gallery image 1" class="gallery__img" data-aos="fade-right"
-                    data-aos-duration="1000" data-offset="200" data-aos-delay="500">
-            </figure>
-            <figure class="gallery__item gallery__item--2">
-                <img src="images/2.jpg" alt="Gallery image 2" class="gallery__img" data-aos="fade-left"
-                    data-aos-duration="1000" data-offset="200" data-aos-delay="500">
-            </figure>
-            <figure class="gallery__item gallery__item--3">
-                <img src="images/3.jpg" alt="Gallery image 3" class="gallery__img" data-aos="fade-right"
-                    data-aos-duration="1000" data-offset="300" data-aos-delay="500">
-            </figure>
+        <!--PHOTOGRAPHS-->
+        <div id="photographs">
+            <h2 style=" padding: 20px;" data-aos="fade-right" data-aos-duration="1000" data-offset="200"
+                data-aos-delay="500">
+                Photographs</h2>
+            <p style="padding: 20px; font-family: grifter; color:white;" data-aos="fade-left" data-aos-duration="1000"
+                data-offset="200" data-aos-delay="500">As a child I had always seen my father click
+                photographs of me and the
+                surroundings which has inspired me to take some wierd,fun and crazy photos.
+
+                <br><br>With the help of my dad’s old Canon 1000D and lil bit of Photoshop here are some of My
+                Masterpieces
+                😂
+            </p>
+            <div class="container">
+                <div class="gallery-1">
+                    <figure class="gallery__item gallery__item--1">
+
+                        <img src="images/1.jpg" alt="Gallery image 1" class="gallery__img" data-aos="fade-right"
+                            data-aos-duration="1000" data-offset="200" data-aos-delay="500">
+                    </figure>
+                    <figure class="gallery__item gallery__item--2">
+                        <img src="images/2.jpg" alt="Gallery image 2" class="gallery__img" data-aos="fade-left"
+                            data-aos-duration="1000" data-offset="200" data-aos-delay="500">
+                    </figure>
+                    <figure class="gallery__item gallery__item--3">
+                        <img src="images/3.jpg" alt="Gallery image 3" class="gallery__img" data-aos="fade-right"
+                            data-aos-duration="1000" data-offset="300" data-aos-delay="500">
+                    </figure>
+                </div>
+            </div>
+            <div class="container">
+                <div class="gallery-2">
+                    <figure class="gallery__item gallery__item--4">
+                        <img src="images/4.jpg" alt="Gallery image 4" class="gallery__img" data-aos="fade-right"
+                            data-aos-duration="1000" data-offset="200" data-aos-delay="500">
+                    </figure>
+                    <figure class="gallery__item gallery__item--5">
+                        <img src="images/5.jpg" alt="Gallery image 5" class="gallery__img" data-aos="fade-left"
+                            data-aos-duration="1000" data-offset="200" data-aos-delay="500">
+                    </figure>
+                    <figure class="gallery__item gallery__item--6">
+                        <img src="images/6.jpg" alt="Gallery image 6" class="gallery__img" data-aos="fade-left"
+                            data-aos-duration="1000" data-offset="300" data-aos-delay="500">
+                    </figure>
+                    <figure class="gallery__item gallery__item--7">
+                        <img src="images/7.jpg" alt="Gallery image 7" class="gallery__img" data-aos="fade-right"
+                            data-aos-duration="1000" data-offset="300" data-aos-delay="500">
+                    </figure>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="gallery-2">
-            <figure class="gallery__item gallery__item--4">
-                <img src="images/4.jpg" alt="Gallery image 4" class="gallery__img" data-aos="fade-right"
-                    data-aos-duration="1000" data-offset="200" data-aos-delay="500">
-            </figure>
-            <figure class="gallery__item gallery__item--5">
-                <img src="images/5.jpg" alt="Gallery image 5" class="gallery__img" data-aos="fade-left"
-                    data-aos-duration="1000" data-offset="200" data-aos-delay="500">
-            </figure>
-            <figure class="gallery__item gallery__item--6">
-                <img src="images/6.jpg" alt="Gallery image 6" class="gallery__img" data-aos="fade-left"
-                    data-aos-duration="1000" data-offset="300" data-aos-delay="500">
-            </figure>
-            <figure class="gallery__item gallery__item--7">
-                <img src="images/7.jpg" alt="Gallery image 7" class="gallery__img" data-aos="fade-right"
-                    data-aos-duration="1000" data-offset="300" data-aos-delay="500">
-            </figure>
+
+        <center>
+            <h1 style="font-family: grifter; color: white;" data-aos="fade-left" data-aos-duration="1000"
+                data-offset="300" data-aos-delay="500">
+                If you like my Porfolio,<br> Hire Me !
+            </h1>
+            <a href="mailto:harideep2002@gmail.com"><img src="images/Email.svg" data-aos="fade-right"
+                    data-aos-duration="1000" data-offset="300" data-aos-delay="500"></a>
+        </center>
+
+
+        <div style="z-index: 1; position: relative; padding: 5px;">
+            <a href="#goback"><img src="images/topper.svg"></a>
         </div>
+        <footer>
+            <!--footer-->
+            <p style="color: white; font-style: grifter; padding-top: 50px;">
+                © 2021 Raga Hari Deep Molagazzela. All rights
+                reserved.</p>
+            <!--footer-->
+
+        </footer>
+
     </div>
-
-    <center>
-        <h1 style="font-family: grifter; color: white;" data-aos="fade-left" data-aos-duration="1000" data-offset="300"
-            data-aos-delay="500">
-            If you like my Porfolio,<br> Hire Me !
-        </h1>
-        <a href="mailto:harideep2002@gmail.com"><img src="images/Email.svg" data-aos="fade-right"
-                data-aos-duration="1000" data-offset="300" data-aos-delay="500"></a>
-    </center>
-
-
-
-    <footer>
-        <!--footer-->
-        <p style="color: white; font-style: grifter; padding-top: 50px;">
-            © 2021 Raga Hari Deep Molagazzela. All rights
-            reserved.</p>
-        <!--footer-->
-
-    </footer>
-
-
 </body>
 
 
