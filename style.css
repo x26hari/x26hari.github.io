@@ -4,31 +4,45 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "grifter";
+  src: url("Grifter.otf") format("opentype");
+
+}
+
 @font-face {
   font-family: "cocogoose";
   src: url("cocogoose.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "cocogoose Pro";
   src: url("Cocogoose\ Pro.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "Louis George Cafe";
   src: url("Louis\ George\ Cafe.ttf") format("truetype");
 }
 
 
-body{
-  font-family: cocogoose pro;
-}
-.nav-link
-{
-  font-family: futura;
-}
-html
-{
-  scroll-behavior: smooth;
-  
-  
+body {
+  font-family: grifter;
+
 }
 
+h2 {
+  font-family: grifter;
+  color: white
+}
+
+.nav-link {
+  font-family: grifter;
+}
+
+html {
+  scroll-behavior: smooth;
+
+
+}

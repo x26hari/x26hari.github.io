@@ -35,7 +35,8 @@
         flex-wrap: wrap;
         text-align: center;
         justify-content: center;
-        padding-bottom: 50px;
+        padding-bottom: 170px;
+
     }
 
     .bnt {
@@ -64,6 +65,107 @@
         text-align: center;
 
     }
+
+    .nav-link {
+        letter-spacing: 1px;
+    }
+
+
+    /*Images CSS*/
+
+    .container {
+        width: 65%;
+        margin: 2rem auto;
+    }
+
+    .gallery-1,
+    .gallery-2 {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 5vw);
+        grid-gap: 1.5rem;
+
+    }
+
+    .gallery__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .gallery__item--1 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        /** Alternative Syntax **/
+        /* grid-column: 1 / span 2;  */
+        /* grid-row: 1 / span 2; */
+    }
+
+
+    .gallery__item--2 {
+        grid-column-start: 5;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 9;
+        /** Alternative Syntax **/
+        /* grid-column: 5 / span 4;
+  grid-row: 1 / span 5; */
+    }
+
+    .gallery__item--3 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 5;
+        grid-row-end: 9;
+        /** Alternative Syntax **/
+        /* grid-column: 1 / span 4;  */
+        /* grid-row: 3 / span 3; */
+    }
+
+
+    .gallery__item--4 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 9;
+        /** Alternative Syntax **/
+        /* grid-column: 1 / span 4;  */
+        /* grid-row: 3 / span 3; */
+    }
+
+    .gallery__item--5 {
+        grid-column-start: 5;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        /** Alternative Syntax **/
+        /* grid-column: 1 / span 2;  */
+        /* grid-row: 1 / span 2; */
+    }
+
+    .gallery__item--6 {
+        grid-column-start: 7;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        /** Alternative Syntax **/
+        /* grid-column: 5 / span 4;
+  grid-row: 1 / span 5; */
+    }
+
+    .gallery__item--7 {
+        grid-column-start: 5;
+        grid-column-end: 9;
+        grid-row-start: 5;
+        grid-row-end: 9;
+        /** Alternative Syntax **/
+        /* grid-column: 5 / span 4;
+  grid-row: 1 / span 5; */
+    }
 </style>
 
 <!--Mobile styling-->
@@ -84,7 +186,7 @@
 
         .photos {
             float: none;
-            width: 200px;
+            width: 300px;
             margin: 0%;
             padding-bottom: 10%;
         }
@@ -100,12 +202,14 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding-bottom: 100px;
         }
 
 
 
         .nav-link {
             font-size: 10px;
+
         }
 
         footer {
@@ -113,7 +217,16 @@
             max-width: 250px;
             left: 50%;
             transform: translateX(-50%);
+            color: white;
         }
+
+        .uc {
+
+            width: 300px;
+        }
+
+
+
     }
 
     @media (min-width: 1000px) {
@@ -133,15 +246,21 @@
             width: 30%;
         }
 
+        .table {
+            width: fit-content;
+        }
+
         .intro {
             width: 1700px;
         }
+
+
     }
 </style>
 
 <!--Body -->
 
-<body>
+<body style=" background-color: black;">
 
 
     <!--Nav Bar-->
@@ -155,31 +274,25 @@
                       <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="aboutme.html" style="color: black;">About Me</a>
+                        <a class="nav-link" href="aboutme.html" style="color: white;">Work</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="projects.html" style="color: black;">Projects</a>
+                        <a class="nav-link" href="projects.html" style="color: white;">Photographs</a>
                     </li>
-                    <li class="nav-item">
-                        <a class=" nav-link" href="photo.html" style="color: black;">Photographs</a>
-                    </li>
-
-
                     <li class="nav-item">
                         <a class="nav-link"
                             href="https://drive.google.com/file/d/17F_LGFR7EZIYAjAi8WXXsWnKRj0tZsuE/view?usp=sharing"
-                            target="_blank" style="color: black;">Resume</a>
+                            target="_blank" style="color: white;">Resume</a>
                     </li>
-
                     <li class="nav-item">
-                        <a class=" nav-link" href="contact.html" style="color: black;">Contact Me</a>
+                        <a class=" nav-link" href="contact.html" style="color: white;">Contact Me</a>
                     </li>
                 </ul>
             </div>
             <button class="navbar-toggler" type="button" style="color: white;" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-list"
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-list"
                     viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
                         d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
@@ -198,23 +311,19 @@
 
                 <li class="nav-item">
                     <a class="nav-link" href="https://www.linkedin.com/in/raga-hari-deep-molagazzela-8b184a18a/"
-                        target="_blank" style="color: black;"><img src="images/linkedin.svg"></a>
+                        target="_blank" style="color: white;"><img src="images/linkedin.svg"></a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="https://dribbble.com/x26hari" target="_blank" style="color: black;"><img
+                    <a class="nav-link" href="https://dribbble.com/x26hari" target="_blank" style="color: white;"><img
                             src="images/dribble.svg"></a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="https://www.behance.net/x26hari" target="_blank"
-                        style="color: black;"><img src="images/behance.svg"></a>
+                        style="color: white;"><img src="images/behance.svg"></a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="https://www.instagram.com/x26.hari/" target="_blank"
-                        style="color: black;"><img src="images/Instagram.svg"></a>
-                </li>
 
             </ul>
         </div>
@@ -223,27 +332,99 @@
     <center>
 
         <div class="intro">
-            <img class="photos" src="images/myphoto.jpg">
-            <video class="videos" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="500"
-                src="images/intro.mov" muted="true" autoplay="true"></video>
-        </div>
+            <img class="photos" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500"
+                src="images/myphoto.jpg">
+            <img class="photos" style="width: 500px;" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="500"
+                src="images/Intro.svg">
 
-        <div class="bnt">
-            <a href="aboutme.html" class="btn btn-primary"
-                style="background: rgba(0, 0, 0, 0.856); border-color: black; font-family: cocogoose; font-weight: bold; box-shadow: black;">ABOUT
-                ME</a>
         </div>
-
 
 
 
     </center>
 
+    <h2 style="  padding: 20px;" data-aos="fade-right" data-aos-duration="1000" data-offset="200" data-aos-delay="500">
+        Work</h2>
+
+    <table>
+        <tr>
+            <a href="https://www.behance.net/gallery/145492463/Zara-Mobile-App" target="_blank"> <img class="table"
+                    src="images/zara.png" alt="zara" data-aos="fade-left" data-aos-duration="1000" data-offset="200"
+                    data-aos-delay="500"> </a>
+        </tr>
+        <tr>
+            <a href="https://www.behance.net/gallery/145473433/UX-Audit-HathaSpace" target="_blank"> <img class="table"
+                    src="images/hathaspace.png" alt="hathaspace" data-aos="fade-right" data-aos-duration="1000"
+                    data-offset="200" data-aos-delay="500"> </a>
+        </tr>
+        <tr>
+            <a href="https://www.behance.net/gallery/121466767/Mayavi-Club-UIUX-and-Front-End-Website-Design"
+                target="_blank">
+                <img class="table" src="images/mayavi.png" alt="mayavi" data-aos="fade-left" data-aos-duration="1000"
+                    data-offset="200" data-aos-delay="500"> </a>
+        </tr>
+
+    </table>
+
+    <h2 style=" padding: 20px;" data-aos="fade-right" data-aos-duration="1000" data-offset="200" data-aos-delay="500">
+        About Me</h2>
+
+    <center>
+
+        <img class="uc" src="images/uc.svg" data-aos="fade-left" data-aos-duration="1000" data-offset="200"
+            data-aos-delay="500">
+
+    </center>
+
+
+    <h2 style="  padding: 20px;" data-aos="fade-right" data-aos-duration="1000" data-offset="200" data-aos-delay="500">
+        Photographs</h2>
+
+    <div class="container">
+        <div class="gallery-1">
+            <figure class="gallery__item gallery__item--1">
+
+                <img src="images/1.jpg" alt="Gallery image 1" class="gallery__img" data-aos="fade-right"
+                    data-aos-duration="1000" data-offset="200" data-aos-delay="500">
+            </figure>
+            <figure class="gallery__item gallery__item--2">
+                <img src="images/2.jpg" alt="Gallery image 2" class="gallery__img" data-aos="fade-left"
+                    data-aos-duration="1000" data-offset="200" data-aos-delay="500">
+            </figure>
+            <figure class="gallery__item gallery__item--3">
+                <img src="images/3.jpg" alt="Gallery image 3" class="gallery__img" data-aos="fade-left"
+                    data-aos-duration="1000" data-offset="300" data-aos-delay="500">
+            </figure>
+        </div>
+    </div>
+    <div class="container">
+        <div class="gallery-2">
+            <figure class="gallery__item gallery__item--4">
+                <img src="images/4.jpg" alt="Gallery image 4" class="gallery__img" data-aos="fade-right"
+                    data-aos-duration="1000" data-offset="200" data-aos-delay="500">
+            </figure>
+            <figure class="gallery__item gallery__item--5">
+                <img src="images/5.jpg" alt="Gallery image 5" class="gallery__img" data-aos="fade-left"
+                    data-aos-duration="1000" data-offset="200" data-aos-delay="500">
+            </figure>
+            <figure class="gallery__item gallery__item--6">
+                <img src="images/6.jpg" alt="Gallery image 6" class="gallery__img" data-aos="fade-left"
+                    data-aos-duration="1000" data-offset="300" data-aos-delay="500">
+            </figure>
+            <figure class="gallery__item gallery__item--7">
+                <img src="images/7.jpg" alt="Gallery image 7" class="gallery__img" data-aos="fade-right"
+                    data-aos-duration="1000" data-offset="300" data-aos-delay="500">
+            </figure>
+        </div>
+    </div>
+
+
+
 
 
     <footer>
         <!--footer-->
-        <p style="font-style: futura; padding-top: 50px;">
+        <p style="color: white; font-style: grifter; padding-top: 50px;">
             © 2021 Raga Hari Deep Molagazzela. All rights
             reserved.</p>
         <!--footer-->
@@ -259,8 +440,9 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 <script>
-    ScrollReveal().reveal('.photos', { delay: 2800 });
-    ScrollReveal().reveal('.bnt', { delay: 7100 });
+
+
+
 </script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
